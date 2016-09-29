@@ -1,0 +1,14 @@
+Reflections_1 - intents, interfaces, onClickListeners, Listeners
+
+I learned that Intents are not only used implicitly to call other apps
+but also explicit to (normally) call Activitys inside the App
+
+writing explicit Intents is pretty strait forward and easy to look up on google
+
+this is not to say when it comes to Interfaces.
+as far as i understood, the interface is a somewhat empty class so i can define 
+what has to happen when the View.ObClickListener Class is created
+therefore i @Override everything that has been in the class and write my stuff
+
+the Listeners are the way to go to deal with User Input.
+there are a lot of different Listeners that can handle all sorts of UserInput
