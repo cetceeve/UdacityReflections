@@ -1,0 +1,13 @@
+Reflections 3 - images, new app features, visual polishing, planning
+
+adding images worked like adding text but you would pass aroung the resource id until the 
+adapter applies it to the layout. the resource id is and int, btw
+
+adding new app features always take some time to think abour because often a large amount
+of code gets affected and it makes sence to find the smoothesd way to implement it
+taking small steps that allow the app to run is favourable (also use placeholders)
+
+the visual polishing took a surprising amout of time. when u program java for so long
+the xml feels kind of weird. using the values resource file really makes scense
+
+planning is a core need for any programming task. its in the nature of the activity itself
