@@ -1,2 +1,17 @@
-Reflections_2
- - array, ArrayList, view recycling, ListView, ArrayAdapter, custom classes
+Reflections_2 - array, ArrayList, view recycling, ListView, ArrayAdapter, custom classes
+
+we started out with an array that allows to store primitive data types with indexes in one variable
+then we switched to an ArrayList wich can hold Objects of any kind using String objects
+
+the ArrayList was necessary to be able to recycle views not displayed on the screen in order to save memory
+we used a ListView instead of the LinearLayout together with an ArrayAdapter
+the ArrayAdapter is basically serving the ListView with Views displaying data form an ArrayList
+
+this did not work for two textviews so i created my own object for the ArrayList
+with contained two Strings and methods to call them
+
+to work with my ListView I also needed to create a custom ArrayAdapter
+the Adapter put the content of my Word Objects into a costum Layout with two TextViews
+and returned it to our ListView
+
+we could apply this system to every activity which made coding very fast in the end
