@@ -1,0 +1,16 @@
+Reflections 4 - MediaPlayer, AudioManager, Activity Life Cycle
+
+I used the MediaPlayer to play Audio. In general it was easy to set up, because the documentation
+about it is pretty good. 
+The AudioManager was pretty much the first feature that i highly copied from the internet
+and only adapted to my situation. That worked pretty good.
+Android Activity Life Cycle is quite cool and also easy to handle.
+I thaink it could be easy to forget including the necessary features.
+
+The most interesting part of this lesson was, that i had to include bigger features
+on my own several times. These need some thought before you start to code.
+Often it effects several parts of the app and as soon as you start you cannot run
+the app any more. So the concept for a new feature needs to work before crushing the hole code.
+Implementing the feature in a way that allows to run the app several times in order to 
+check for bugs is surprisingly because you pretty much have to simulate the half finished 
+code in order to know if it is supposed to be running.
