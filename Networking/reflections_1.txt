@@ -1,16 +1,15 @@
-Reflections 1 - HTTP Requests, JSON Parsing, Stream of Data + Buffered Reader
+Reflections 1 - API, JSON, JSON parsing
 
-NOTE: I unfortunatly did not write a reflection for lesson one.
-This is actually the reflection for lesson 2.
+An API provides ways for Developers, Users or Apps to interact with a server.
+The API documentation provides clear instuctions on how to interact
+with the specific API
 
-HTTP Requests are used to communicate to servers via the Internet.
-In code the HTTP Requests has several steps like. 
-Preparing URL, settings for the Message sent (like pull or push request)
-and connect in the end.
-The server allways answers in the form of a Request Code which gives
-information about the status of the connection.
-If the connection was good. It sents back what we requested ("pull") as a
-stream of data. This data can be read line by line via a buffered reader.
-This method is very effective. We also use a string builder to build up the
-string line by line and only once finished we store the StringBuilder object
-into the String datatype. This safes a lot of performance.
+From the USGS Server we got back GeoJSON Script.
+This is the most commom form on the web to share information between
+different devices. The JSON can be formatted by a JSON Formatter.
+
+Ones we got the JSON form the server we can parse it.
+that means putting the JSON Skript into an Object and
+retrieving the information inside the JSON Object.
+JSON stores information in a tree like structure so we basically
+go down deeper into the infos just like in a file explorer.

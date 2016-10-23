@@ -1,0 +1,13 @@
+Reflections 2 - HTTP Requests, Stream of Data + Buffered Reader
+
+HTTP Requests are used to communicate to servers via the Internet.
+In code the HTTP Requests has several steps like. 
+Preparing URL, settings for the Message sent (like pull or push request)
+and connect in the end.
+The server allways answers in the form of a Request Code which gives
+information about the status of the connection.
+If the connection was good. It sents back what we requested ("pull") as a
+stream of data. This data can be read line by line via a buffered reader.
+This method is very effective. We also use a string builder to build up the
+string line by line and only once finished we store the StringBuilder object
+into the String datatype. This safes a lot of performance.
