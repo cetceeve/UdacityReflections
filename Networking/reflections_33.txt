@@ -1,0 +1,25 @@
+Reflections 3 - http networking request to webserver, background thread, using loaders,user interface
+
+___http networking request to webserver___
+the http network request is performed via a url
+the url holds the address of the server and a query with further instructions for the server
+a request works like this:
+- connecting to the webserver
+- starting an input stream
+- reading the input stream (input stream reader, buffered reader)
+- dealing with the input stream result in your software (e.g. JSON String)
+
+___background thread___
+it makes scense to run operations like this in an background thread, so the app still works
+(reacts to user input) while loading data
+the background thread should be created via an AsyncTaskLoader
+the loader needs his on class where the loadInBackground Method calls everything that will be done in the background thread
+
+___using loaders___
+Loaders are a seperated instance from activitys but interact with activitys
+that allows the loader to execute tasks while the activity is paused (e.g when rotating the display)
+this allows for a fast, responsive user interface
+
+___user interface___
+as a rule of thumb the software should always let the user know what she is currently doing
+the information given should be easy to understand and visually appealing (e.g. progress bar)
