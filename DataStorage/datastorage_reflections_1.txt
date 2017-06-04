@@ -1,0 +1,31 @@
+--- Intro to SQLite Databases ---
+
+sqlite databases are structured like spreadsheets.
+one database (.db) can contain several of these tables
+
+sqlite can handle specific datatypes like:
+- INTEGER
+- TEXT [strings]
+- REAL [float]
+- BLOB [exactly the input]
+- NULL
+
+working with databases was named C.reate, R.ead, U.pdate, D.elete
+some most important lines:
+- CREATE TABLE table_name(columns_name TYPE CONSTRAINTS, columns_name TYPE CONSTRAINTS,...);
+- DROP TABLE table_name;
+- INSERT INTO table_name(columns_name, ...) VALUES (value_1, ...);
+- SELECT * FROM table_name WHERE a==b ORDER BY columns_name ASC;
+- UPDATE table_name SET columns_name WHERE columns_name==1;
+- DELETE FROM table_name WHERE columns_name==1;
+
+most important constraints:
+- PRIMARY KEY AUTOINCREMENT
+- NOT NULL
+- DEFAULT value
+
+some sqlite3 commands:
+- .exit
+- .open filename.db
+- .header on
+- .mode columns
