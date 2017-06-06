@@ -1,0 +1,18 @@
+--- Using Database in Android ---
+What we used and how:
+
+- ContractClass
+in here I stored pretty much only final Variables that were in part accessilbe via a method inside
+
+- DbHelper extends SQLiteOpenHelper
+this class is used to create and maintain the database
+methods like
+    .getWriteableDatabase
+    .getReadableDatabase
+                        can be called on this method.
+
+- i can read from the database by calling the .query method on an
+SQLite Database and storeing the result in an Cursor object
+both the SQLiteDatabase and the Cursor are android frameworks
+
+The Android Documentation page for SQLite Databases with Android is great!!!
