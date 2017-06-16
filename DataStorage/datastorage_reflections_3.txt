@@ -1,0 +1,13 @@
+--- Content Providers in Android ---
+Our App now uses a Content Provider that sits between the 
+Activities and the Database
+
+in Detail:
+Activity -> ContentResolver -> ContentProvider + UriMatcher -> DbHelper -> Database
+using a lot of Constants from the Contract class
+
+the ContentProvider checks if the data from the activity is valid
+the information is sent using a content URI
+the UriMatcher helps to read the URI and perform the correct action
+
+the Activities now call methods via the ContentResolver directly in the ContentProvider
